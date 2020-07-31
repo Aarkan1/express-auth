@@ -1,0 +1,26 @@
+{
+  "/": { "GET": "*" },
+
+  "/api/login": {
+    "GET": "*",
+    "POST": "anonymous"
+  },
+
+  "/api/register": {
+    "POST": "anonymous"
+  },
+
+  "/api/logout": {
+    "GET": "admin, user"
+  },
+
+  "/api/secret": {
+    "GET": "admin"
+  },
+
+  "/rest*": {
+    "GET": "*",
+    "ALL": "admin"
+  }
+  
+}
